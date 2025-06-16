@@ -1,0 +1,203 @@
+{
+  "id": "2e74e8ff-3222-423b-9cd7-5190207dbe97",
+  "version": "2.0",
+  "name": "UITestLaboratorio7",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "b33fea97-7fb2-448a-a648-0002cde1bede",
+    "name": "PruebaUIUno",
+    "commands": [{
+      "id": "1fe0f8c0-9077-40ff-b17c-aeec474acdc1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d56ecbb5-0244-4b74-b71a-888641a4283f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1060",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f98ee210-2e51-4b0e-866f-735721d8635b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "Lista de Paises\\nAgregar Pais\\nNombre Continente Idioma Acciones\\nCosta Rica América Español EditarEliminar\\nArgentina América Español EditarEliminar\\nCanada América Inglés/Frances EditarEliminar\\nFrancia Europa Frances EditarEliminar\\nEspaña Europa Español EditarEliminar\\nstring string string EditarEliminar\\nPanama América Espanol EditarEliminar\\nAlemania Europa Aleman EditarEliminar"
+    }, {
+      "id": "de5f9406-07ab-4e65-9d42-a227f9b01b42",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8ca5c73-7482-4a29-8f91-f5237a28d442",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-outline-secondary",
+      "targets": [
+        ["css=.btn-outline-secondary", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Agregar Pais')]", "xpath:innerText"]
+      ],
+      "value": "Agregar Pais"
+    }, {
+      "id": "13c3adfc-61cd-48f0-b2a5-411de4ef6023",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(8) .btn-secondary",
+      "targets": [
+        ["css=tr:nth-child(8) .btn-secondary", "css:finder"],
+        ["xpath=//div[@id='app']/div/table/tbody/tr[8]/td[4]/button", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "daeeb09b-03b6-4a48-bfb6-dd8b3beb149a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(7) .btn-secondary",
+      "targets": [
+        ["css=tr:nth-child(7) .btn-secondary", "css:finder"],
+        ["xpath=//div[@id='app']/div/table/tbody/tr[7]/td[4]/button", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c6936ce-4737-45d9-81dd-83712ab10841",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(8) .btn-danger",
+      "targets": [
+        ["css=tr:nth-child(8) .btn-danger", "css:finder"],
+        ["xpath=//div[@id='app']/div/table/tbody/tr[8]/td[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[4]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7d38c04c-33d3-4c66-9a00-0138398a0197",
+    "name": "TestsLab7_C28741",
+    "commands": [{
+      "id": "b80410ea-4d7b-42d3-9256-bfab213bfdaf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c2c811e-ef2c-43b3-a882-7e8e8d8cad3e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1060",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0f8b591-3c18-494c-bc6b-82078c05393a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='app']/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Costa Rica')]", "xpath:innerText"]
+      ],
+      "value": "Costa Rica"
+    }, {
+      "id": "0422f42a-c387-4fbe-a530-23e307453346",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-outline-secondary",
+      "targets": [
+        ["css=.btn-outline-secondary", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Agregar Pais')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4cc1088-97af-4431-b427-fbdc7cd54d70",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//td[text()=\"America\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96efa789-92e5-4e77-b7d7-1d1da6a65a9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-secondary",
+      "targets": [
+        ["css=.btn-outline-secondary", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Agregar Pais')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f05af95-439e-49f1-bd0c-4adbfb619c3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Formulario de creación de países')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24f82ae8-7269-4163-9008-96ef9ec466f7",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Agregar país",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1826deec-2885-4590-b65d-c8d2c06c3aa9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/form/div[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee34dccd-4123-40a7-8efa-60d42eafc8e8",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Por favor complete todos los campos",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "37feb9e5-e850-4c80-81ad-e75a890ccafa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b33fea97-7fb2-448a-a648-0002cde1bede"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

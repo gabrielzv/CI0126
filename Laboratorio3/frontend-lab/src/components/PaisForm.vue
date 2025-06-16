@@ -10,7 +10,6 @@
               type="text"
               id="nombre"
               class="form-control"
-              required
             />
           </div>
           <div class="form-group">
@@ -18,7 +17,6 @@
             <select
               v-model="datosFormulario.continente"
               id="continente"
-              required
               class="form-control"
             >
               <option value="" disabled>Seleccione un continente</option>
@@ -37,7 +35,6 @@
               type="text"
               id="idioma"
               class="form-control"
-              required
             />
           </div>
           <div>
@@ -62,24 +59,35 @@
             },
         };
     },
+    mounted() {
+        document.title = "Agregar país";
+    },
     methods: {
-        guardarPais() {
-            console.log("Datos a guardar:", this.datosFormulario);
-            axios
+    guardarPais() {
+        if (
+            !this.datosFormulario.nombre.trim() ||
+            !this.datosFormulario.continente.trim() ||
+            !this.datosFormulario.idioma.trim()
+        ) {
+            alert("Por favor complete todos los campos");
+            return;
+        }
+        console.log("Datos a guardar:", this.datosFormulario);
+        axios
             .post("http://localhost:5250/api/Paises", {
                 nombre: this.datosFormulario.nombre,
                 continente: this.datosFormulario.continente,
                 idioma: this.datosFormulario.idioma,
             }) 
-            .then (function (response) {
+            .then(function (response) {
                 console.log(response);
                 window.location.href = "/";
             })
             .catch(function (error) {
                 console.log(error);
             });
-        },
     },
+  },
 };
 
   </script>
